@@ -1,0 +1,120 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__container {
+  background-color: #f4f4f4;
+  padding: 16px 40px;
+  box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.5);
+}
+
+.nav__busca {
+  width: 354px;
+  height: 48px;
+  padding: 10px 16px;
+  margin: 0 24px;
+  border-radius: 5px;
+  border: 1px solid var(--vermelho-primario);
+}
+
+.nav__items {
+  display: flex;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 24px;
+}
+
+.nav__item > p {
+  margin-left: 8px;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+}
+
+.nav__textbold {
+  color: var(--cinza);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.nav__text {
+  color: var(--vermelho-primario);
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.menu {
+  font-size: 16px;
+}
+
+.arrow-down {
+  border: solid var(--vermelho);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow__back {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  display: none;
+}
+
+.entrega__container {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 8px 8px;
+  margin-left: 24px;
+  box-shadow: 5px 5px 12px -10px rgba(0, 0, 0, 0.45);
+}
+
+.carrinho__items {
+  position: absolute;
+  top: 21px;
+  right: 127px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: var(--laranja-secundario);
+  color: white;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .entrega__container {
+    display: none;
+  }
+
+  .nav__busca {
+    display: none;
+  }
+
+  .nav__items {
+    display: none;
+  }
+
+  .arrow__back {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+}
