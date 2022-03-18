@@ -67,8 +67,8 @@ function Produto() {
             <h2>{produto[0].nm_product}</h2>
             <h4>{produto[0].description}</h4>
             <h3 className="texto__preco">
-              {produto[0].vl_discount}
-              <strike>{produto[0].vl_price}</strike>
+              {`R$${produto[0].vl_discount}`}
+              <strike>{`R$${produto[0].vl_price}`}</strike>
             </h3>
           </section>
 
