@@ -1,4 +1,4 @@
-# Teste Deliverize
+# Deliverize
 
 📌 Clique [aqui](https://deliverize-teste.netlify.app/) para visitar o site.
 
